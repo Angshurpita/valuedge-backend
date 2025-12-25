@@ -1,28 +1,33 @@
 # ValuEdge Pro – Backend
 
-FastAPI-powered valuation engine supporting:
-- Discounted Cash Flow (DCF)
-- Sensitivity Analysis
-- Comparable Company Analysis
-- PDF valuation reports
+ValuEdge Pro is a FastAPI-based financial valuation engine designed to perform
+institutional-style company valuation analyses.
 
-## Tech Stack
-- FastAPI
-- Pydantic
-- NumPy / Pandas
-- Uvicorn
-- Render (deployment)
+The backend powers all core valuation logic and exposes a clean REST API
+consumed by the frontend dashboard.
 
-## Live API
-https://valuedge-backend-1.onrender.com
+---
 
-## Key Endpoints
-- POST /valuation/dcf
-- POST /valuation/sensitivity
-- POST /valuation/comps
-- POST /export/pdf
+## 🚀 Features
 
-## Run Locally
-```bash
-pip install -r requirements.txt
-uvicorn app.main:app --reload
+- Discounted Cash Flow (DCF) valuation
+- Sensitivity analysis (WACC × Terminal Growth)
+- Comparable company analysis (trading multiples)
+- PDF valuation report generation
+- Production-ready API architecture
+
+---
+
+## 🛠 Tech Stack
+
+- **Python 3**
+- **FastAPI**
+- **Pydantic**
+- **NumPy / Pandas**
+- **Uvicorn**
+- **Render** (deployment)
+
+---
+
+## 🌐 Live API
+
